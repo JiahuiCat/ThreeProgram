@@ -1,0 +1,55 @@
+.box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  background: url("../images/5791d8362df3a.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: .6;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.userinfo {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, .35);
+  border-radius: 10px;
+}
+
+.check {
+
+  overflow: hidden;
+}
+
+.checked {
+  display: block;
+}
+
+.check-bg {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e4383d;
+}
+
+.c {
+  display: none;
+}
+
+.c:checked+.check-bg {
+  background-color: #e4383d;
+}
+
+.remember {
+  margin-top: -2px;
+  margin-left: 5px;
+}
+
+.alert {
+  display: none;
+}

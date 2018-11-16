@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/detail.css" />
+</head>
+<body>
+
+	<div class="container-fluid">
+		
+		<div class="row">
+			<div class="col-12 pa">
+				<div class="naving clearfix">
+					<div class="float-left nav-left clearfix">
+						<div class="logo">
+							<img class="auto-img" src="./images/logo.jpg" />
+						</div>
+						<div  id="home" class="nav-tab">首页<i class="line"></i></div>
+						<div  id="order" class="nav-tab">我的订单<i class="line"></i></div>
+					</div>
+					
+
+					<div class="float-right nav-right clearfix">
+						<div id="nickname" class="nickname"></div>
+						<div class="nav-tab" id="logout">退出<i class="line"></i></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<!-- PC端 -->
+		<div id="pc" class="detail">
+					<div class="detail-box float-left">
+						<!-- 移动滑块 -->
+						<div class="mask"></div>
+
+						<!-- 绑定移动事件层 -->
+						<div class="layer"></div>
+
+						<!-- 放大背景层 -->
+						<div class="large"></div>
+
+					</div>
+					<div class="detail-info float-left">
+						<h5 class="name"></h5>
+						<p class="price"></p>
+						<div class="clearfix">
+							<div class="float-left count-text"></div>
+							<div class="float-left clearfix">
+								<span class='decrease float-left btns' name="decrease">-</span>
+								<input class="count float-left" type="" name="" value="1" />
+								<span class="increase float-left btns" name="increase">+</span>
+							</div>
+						</div>
+						<div class="product-desc">
+							
+						</div>
+					</div>
+		</div>
+
+		<!-- ipad, mobile -->
+		<div id="ipadmobile" class="product">
+			<div class="row">
+				<div class="col-12 pa">
+					<div id="detailBox" class="detail-box">
+						<img class="auto-img" src="" />
+					</div>
+					<div class="detail-box-content">
+						<div class="detail-info">
+							<h5 class="name"></h5>
+							<p class="price"></p>
+							<div class="clearfix">
+								<div class="float-left count-text"></div>
+								<div class="float-left clearfix">
+									<span class='decrease float-left btns' name="decrease">-</span>
+									<input class="count float-left" type="" name="" value="1" />
+									<span class="increase float-left btns" name="increase">+</span>
+								</div>
+							</div>
+							<div class="product-desc">
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	
+		<div id="content" class="like">
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/scale.js"></script>
+	<script type="text/javascript" src="./js/params.js"></script>
+	<script type="text/javascript" src="./js/detail.js"></script>
+	<script type="text/javascript" src="./bootstrap.min.js"></script>
+</body>
+</html>

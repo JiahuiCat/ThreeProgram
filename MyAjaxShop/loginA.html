@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+    <style type="text/css">
+    .box {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        background: url("./BeijingTu2.jpg") no-repeat center center;
+        background-size: cover;
+        opacity: .6;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .userinfo {
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .35);
+        border-radius: 10px;
+    }
+
+    .check {
+        width: 20px;
+    }
+
+    .checked {
+        display: block;
+    }
+
+    .check-bg {
+        height: 20px;
+        border: 1px solid #e4383d;
+    }
+
+    .c {
+        display: none;
+    }
+
+    .c:checked+.check-bg {
+        background-color: #e4383d;
+    }
+
+    #passwordErr {
+        display: none;
+    }
+
+    #userNameErr {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="box"></div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 mt-5">
+                    <div class="userinfo">
+                        <h3 class="text-center text-dark mb-3">用户登录</h3>
+                        <form>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="用户名" id="getUsername">
+                            </div>
+                            <div class="alert alert-danger" id="userNameErr">
+                                用户名格式错误
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-lock"></i>
+                                    </div>
+                                </div>
+                                <input type="password" class="form-control" placeholder="密码" id="getPassword">
+                            </div>
+                            <div class="alert alert-danger password-alert" id="passwordErr">
+                                密码格式错误
+                            </div>
+                            <!--   <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="c1" required>
+                                 <label class="custom-control-label" for="c1">记住我</label> 
+                            </div>-->
+                            <div class="input-group">
+                                <button class="btn btn-success btn-block" type="button" id="btn">登录 <span class="fa fa-sign-in"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tip" class="tip"></div>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/crypto.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        var validForm = {
+            //为空
+            isEmpty: function(val) {
+                return val == undefined || val.trim() == '';
+            },
+            //用户名: 字母数字组合 比如:3 - 6位字符组合
+            isUsername: function(val, min, max) {
+                var usernameReg = new RegExp('^[A-Za-z\\d]{' + min + ',' + max + '}$');
+                return usernameReg.test(val);
+            },
+            //密码: 字母数字下划线 6 - 16
+            isPassword: function(val, min, max) {
+                var passwordReg = new RegExp('^\\w{' + min + ',' + max + '}$');
+                return passwordReg.test(val);
+            },
+        };
+
+        $('#btn').on('click', function(e) {
+            //获取用户名input框内的值
+            var getUsername = $('#getUsername').val();
+            //获取密码输入框input内的值
+            var getPassword = $('#getPassword').val();
+            var UsernameErr = $('#userNameErr');
+            var passwordErr = $('#passwordErr');
+            
+            //正则判断如果符合时就显示
+            if (validForm.isEmpty(getUsername)) {
+                UsernameErr.css({ 'display': 'block' }).text('用户名不能为空');
+                //将显示出来的div隐藏掉
+                setTimeout(function() {
+                    UsernameErr.css({ 'display': 'none' });
+                }, 2000)
+            } else if (!validForm.isUsername(getUsername, 6, 10)) {
+                UsernameErr.css({ 'display': 'block' }).text('用户名格式不正确');
+
+                setTimeout(function() {
+                    UsernameErr.css({ 'display': 'none' });
+                }, 2000)
+            } else if (validForm.isEmpty(getPassword)) {
+
+                passwordErr.css({ 'display': 'block' }).text('密码不能为空').slideDown(150);
+
+                setTimeout(function() {
+                    passwordsErr.css({ 'display': 'none' });
+                }, 2000)
+
+            } else if (!validForm.isPassword(getPassword, 6, 16)) {
+
+                passwordErr.css({ 'display': 'block' }).text('密码格式不正确, 6-16个字母数字下划线组合');
+            } else {
+                var userInfo = {
+                    username: getUsername,
+                    password: getPassword
+                };
+                console.log('userInfo ==> ', userInfo);
+
+                $.ajax({
+                    type: 'GET',
+                    url: './data/userData.json',
+                    dataType: 'json',
+                    data: null,
+                    async: true,
+                    success: function(a) {
+
+                        var dat = a.users;
+                        var nickname = '';
+
+                        console.log('dat===', dat);
+                         for (var i = 0; i < dat.length; i++) {
+
+                            if (dat[i].name == getUsername && dat[i].pwd == getPassword) {
+
+                                nickname = dat[i].nickname;
+                                console.log('登录成功,你已进入抢铁行列');
+                                 //将用户的匿名保存在本地存储
+                                localStorage.nickname = encodeURIComponent(nickname);
+                                localStorage.username = strCrypto.addCrypto(getUsername);
+                                //跳转home
+                                location.href = './home.html';
+                               
+                            } else {
+                                $('.password-alert').text('密码不正确').slideDown(150);
+                                //定时器
+                                setTimeout(function() {
+                                    $('.password-alert').css({ 'display': 'none' });
+                                }, 2000)
+                                console.log('登录失败,退出');
+                            }
+                        }
+                    },
+                })
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+	"users": [
+		{"id": 1, "name": "xiaoming12", "nickname": "小明12", "pwd": "123456"},
+		{"id": 2, "name": "xiaoming", "nickname": "小明1", "pwd": "123456"},
+		{"id": 3, "name": "xiaokeai", "nickname": "小可爱", "pwd": "123456"},
+		{"id": 6, "name": "xiaoming3", "nickname": "小明3", "pwd": "123456"},
+		{"id": 4, "name": "xiaoming4", "nickname": "小明4", "pwd": "123456"},
+		{"id": 5, "name": "xiaoming5", "nickname": "小明5", "pwd": "123456"},
+		{"id": 6, "name": "xiaoming6", "nickname": "小明6", "pwd": "123456"}
+	]
+}

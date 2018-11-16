@@ -1,0 +1,260 @@
+{
+	"types": [
+		"meizhuang",
+		"nvzhuang",
+		"jujia"
+	],
+	"jujia": {
+		"type": "居家",
+		"isHot": true,
+		"hotEndTime": "2018-10-15 15:43:56",
+		"theme": "jj",
+		"products": [
+			{
+				"id": "jujia1",
+				"img": "./images/jujia1.jpg",
+				"price": 2778,
+				"name": "LOVO",
+				"mainDescribe": "欧洲新锐设计师设计",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "jujia2",
+				"img": "./images/jujia2.jpg",
+				"price": 2348,
+				"name": "罗莱生活",
+				"mainDescribe": "非常睡眠 治愈力",
+				"detailDescribe": "SUPOR/苏泊尔 CYSB50YCW10DJ-100 一键排压 智能预约（24小时预约）精准温控 一锅双胆 5L正品3-4人 电压力锅"
+			},
+			{
+				"id": "jujia3",
+				"img": "./images/jujia3.jpg",
+				"price": 138,
+				"name": "博朗",
+				"mainDescribe": "德国精工，礼遇不凡",
+				"detailDescribe": "全场限时优惠，指定产品晒图有礼！抢限量满减优惠券：满2000元可用80元券/满3000元可用120元券/满5000元可用200元券/满10000元可用400元券，金属超薄/2GB+32GB大内存/智慧语音/4K HDR"
+			},
+			{
+				"id": "jujia4",
+				"img": "./images/jujia4.jpg",
+				"price": 2253,
+				"name": "ECOVACS",
+				"mainDescribe": "爆款扫地机器人",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "jujia5",
+				"img": "./images/jujia5.jpg",
+				"price": 343,
+				"name": "NOKO",
+				"mainDescribe": "食尚厨房，由我做主",
+				"detailDescribe": "【备用数据线套餐】 苹果 iPhone XS 64G 全网通手机套餐包含备用数据线,二合一转接线，iPhone系统版本以实物为准"
+			},
+			{
+				"id": "jujia6",
+				"img": "./images/jujia6.jpg",
+				"price": 9996,
+				"name": "iPhoneXS(512GB)",
+				"mainDescribe": "最高直降200",
+				"detailDescribe": "304不锈钢拉丝工艺，全钢套件；配上挂式大炖盅和滤网，炖煮双全；预约/定时/调温+8大功能；旋钮操作，高清液晶屏；1.8L容量，高硼硅玻璃壶身"
+			},
+			{
+				"id": "jujia7",
+				"img": "./images/jujia7.jpg",
+				"price": 2132,
+				"name": "春秋被",
+				"mainDescribe": "新品春秋被480元起",
+				"detailDescribe": "【热销爆款 强吸劲扫】科沃斯扫地机器人地宝-魔镜S 扫拖一体吸尘器 扫地机器人APP智能远程遥控，220ML大水箱，大抹布均匀湿拖，千帕吸力，贴地式吸口，防毛发缠绕"
+			},
+			{
+				"id": "jujia8",
+				"img": "./images/jujia8.jpg",
+				"price": 3211,
+				"name": "厨电抢购",
+				"mainDescribe": "厨电精选单品",
+				"detailDescribe": "欧乐-B Oral-B口腔护理专场 > 欧乐B DB4510公主 干电池儿童电动牙刷"
+			}
+		]
+	},
+
+	"nvzhuang": {
+		"type": "女装",
+		"isHot": false,
+		"hotEndTime": "",
+		"theme": "nz",
+		"products": [
+			{
+				"id": "nz1",
+				"img": "./images/nz1.jpg",
+				"price": 278,
+				"name": "维多拉斯",
+				"mainDescribe": "印花针织服装",
+				"detailDescribe": "此款Argyle套头衫以系列标志性的菱纹展现本季印花针织服装特色。手工装饰工艺，后背处的黑色贴饰搭配针织印花图案。未来风格的新版LV Thread刺绣贴饰更显活泼感与品牌特色"
+			},
+			{
+				"id": "nz2",
+				"img": "./images/nz2.jpg",
+				"price": 348,
+				"name": "丝帕舍",
+				"mainDescribe": "长袖褶饰连衣裙",
+				"detailDescribe": "此款长袖褶饰连衣裙于高级时装的雍容优雅之中散发前卫新潮的锐气。由厚实的真丝双层乔其纱材质而成，袖口饰有褶纹，正面配有围兜垂饰。非对称设计、纯黑摁扣与视幻风格的长袖凸显摩登感"
+			},
+			{
+				"id": "nz3",
+				"img": "./images/nz3.jpg",
+				"price": 138,
+				"name": "褶饰短袖上衣",
+				"mainDescribe": "初秋新装",
+				"detailDescribe": "此款褶饰短袖上衣对本季定制运动衫主题进行了颇为个性的演绎。多种亮色针织花纹的拼贴组合创造精美的装饰效果，体现女装艺术总监Nicolas Ghesquière对运动装设计的借鉴。与此相对，饰有本季特色几何印花的褶纹围兜——单侧配有摁扣——则展现出温柔的女性气质。"
+			},
+			{
+				"id": "nz4",
+				"img": "./images/nz4.jpg",
+				"price": 153,
+				"name": "HSTYLE",
+				"mainDescribe": "会员秒杀，48元起",
+				"detailDescribe": "以本季标志性的斜纹软呢裁制而成，此款长度及膝的A字裙为系列关键设计之一，展现经典法式时尚风格。胶质纤维为厚实的原色面料增添摩登质感。两侧配有皮质摁扣，穿着时裙摆处的圆扣可开可闭。"
+			},
+			{
+				"id": "nz5",
+				"img": "./images/nz5.jpg",
+				"price": 343,
+				"name": "白露语",
+				"mainDescribe": "玩味时尚，浪漫穿搭",
+				"detailDescribe": "轻盈、舒适而时尚，此款抽绳慢跑长裤饰有本季标志性的几何印花，其中融入路易威登品牌标识。由凸纹摩洛哥真丝绉绸裁制而成，版型宽松。腰部抽绳配有Monogram帆布饰片，踝部配有LV拉链。"
+			},
+			{
+				"id": "nz6",
+				"img": "./images/nz6.jpg",
+				"price": 232,
+				"name": "ONE-MORE",
+				"mainDescribe": "周年店庆，狂欢轰趴",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "nz7",
+				"img": "./images/nz7.jpg",
+				"price": 932,
+				"name": "ROM&JuL",
+				"mainDescribe": "衣然心动，精选尖货",
+				"detailDescribe": "饰有本季标志性的Trunks印花，此款T恤是女装艺术总监Nicolas Ghesquière基于路易威登条纹水手服的创新之作。直筒剪裁，醒目的挂锁、木板条与牵引螺栓图案均来自路易威登经典旅行箱。重现旅行箱原色的背景设计，创造独特的不均匀质感。"
+			},
+			{
+				"id": "nz8",
+				"img": "./images/nz8.jpg",
+				"price": 191,
+				"name": "哥弟",
+				"mainDescribe": "秋日温暖，简约派",
+				"detailDescribe": "此款真丝斜纹布套头衫中，本季风靡的Trunk印花分外亮眼。尊崇路易威登传统，将经典LV旅行箱的丰富细节元素演绎为趣味十足的印花图案。女装艺术总监Nicolas Ghesquière向路易威登悠远历史的致敬之作。"
+			}
+
+		]
+	},
+
+	"meizhuang": {
+		"type": "美妆",
+		"isHot": true,
+		"hotEndTime": "2018-10-15 10:12:43",
+		"theme": "mz",
+		"products": [
+			{
+				"id": "mz1",
+				"img": "./images/mz1.jpg",
+				"price": 278,
+				"name": "innisFree",
+				"mainDescribe": "悦诗风吟，呵护美肌",
+				"detailDescribe": "CAUDALIE欧缇丽葡萄水活性喷雾，本款喷雾具舒缓作用，在丰收季节直接由葡萄萃取。可在洁肤后作为爽肤水使用，或于白天任何时候使用，为肌肤带来保湿、舒缓、清新的感受"
+			},
+			{
+				"id": "mz2",
+				"img": "./images/mz2.jpg",
+				"price": 348,
+				"name": "丸美",
+				"mainDescribe": "低价热卖，最高直降188元",
+				"detailDescribe": "经特殊设计的舒缓刷头结合声波动力焕白配方，比手洗更洁净、更均匀肤色，祛除暗斑、提亮肤色的效果更好。 1. 超细刷毛，有效清洁、舒缓肌肤 2. 粉色内环是动力焕白刷头的标志 3. 密集毛簇设计，刷毛更长，更舒缓肌肤 "
+			},
+			{
+				"id": "mz3",
+				"img": "./images/mz3.jpg",
+				"price": 238,
+				"name": "Fo口红",
+				"mainDescribe": "明显出来滋润度的差距",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz4",
+				"img": "./images/mz4.jpg",
+				"price": 79,
+				"name": "膜法世家",
+				"mainDescribe": "击穿底价面膜79元40片",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz5",
+				"img": "./images/mz5.jpg",
+				"price": 343,
+				"name": "朱丽叶",
+				"mainDescribe": "抵抗初老，恢复少女肌",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz6",
+				"img": "./images/mz6.jpg",
+				"price": 178,
+				"name": "佰草集",
+				"mainDescribe": "秋日养肤，好礼相送",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz7",
+				"img": "./images/mz7.jpg",
+				"price": 132,
+				"name": "su:m",
+				"mainDescribe": "入秋护肤，焕新'秘'方",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz8",
+				"img": "./images/mz8.jpg",
+				"price": 23,
+				"name": "韩束",
+				"mainDescribe": "花颜尽绽，低至23元",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz9",
+				"img": "./images/mz9.jpg",
+				"price": 343,
+				"name": "伊丽莎白雅顿",
+				"mainDescribe": "买精华至高赠10件礼",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz10",
+				"img": "./images/mz10.jpg",
+				"price": 432,
+				"name": "LaneIge",
+				"mainDescribe": "玩美假日，水力爆棚",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz11",
+				"img": "./images/mz11.jpg",
+				"price": 132,
+				"name": "百雀羚",
+				"mainDescribe": "滋养护肤，低至2.5折",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			},
+			{
+				"id": "mz12",
+				"img": "./images/mz12.jpg",
+				"price": 211,
+				"name": "SK-Two",
+				"mainDescribe": "ChangeDestiny",
+				"detailDescribe": "居家指所有和家庭生活相关的物品。包括家具，饰品，生活用品。现代的居家生活已不仅仅是局限在字面上的意思，居家更多的是现代人追求闲散，休闲，享受的一种生活方式"
+			}
+
+		]
+	}
+
+}
